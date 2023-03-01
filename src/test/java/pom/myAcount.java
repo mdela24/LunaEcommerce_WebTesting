@@ -15,12 +15,16 @@ public class myAcount extends funcionesBasicas{
 	}
 
 	public void MyAcount () {
-		this.click(btnList);
-		List<WebElement> element = driver.findElements(btnMyAcount);
-		for(int i=0; i<element.size();i++) {
-			if(i==0) {
-				element.get(i).click();
+		try {
+			this.click(btnList);
+			List<WebElement> element = driver.findElements(btnMyAcount);
+			for(int i=0; i<element.size();i++) {
+				if(i==0) {
+					element.get(i).click();
+				}
 			}
+		}catch(Exception e) {
+			System.out.println("[Luma-Ecommerce] El metodo MyAcount ha fallado en: "+e);
 		}
 	}
 }

@@ -26,7 +26,7 @@ public class loginPage extends funcionesBasicas {
 			this.send(inputUserName, email);
 			this.send(inputPassword, password+Keys.TAB+Keys.ENTER);
 		}catch(Exception e) {
-
+			System.out.println("[Luma-Ecommerce] El metodo login ha fallado en: "+e);
 		}
 	}
 

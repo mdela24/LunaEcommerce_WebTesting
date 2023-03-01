@@ -29,7 +29,7 @@ public class newAcountPage extends funcionesBasicas {
 			this.send(inputPrimerNom, primerNom);
 			this.send(inputSegundoNom, segundoNom);
 		}catch(Exception e) {
-
+			System.out.println("[Luma-Ecommerce] El metodo crearCuenta ha fallado en: "+e);
 		}
 	}
 	
@@ -39,7 +39,7 @@ public class newAcountPage extends funcionesBasicas {
 			this.send(inputPass, pass);
 			this.send(inputConfPass, confPass+Keys.TAB+Keys.ENTER);
 		}catch(Exception e) {
-			
+			System.out.println("[Luma-Ecommerce] El metodo crearCuenta2 ha fallado en: "+e);	
 		}
 	}
 
