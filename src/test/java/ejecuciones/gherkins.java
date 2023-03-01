@@ -30,6 +30,4 @@ public class gherkins extends objetos {
 	public void ingresamos_a_la_cuenta_creada() throws Throwable {
 		acount.MyAcount();
 	}
-
-
 }
