@@ -45,7 +45,7 @@ public class myAcount extends funcionesBasicas{
 			this.click(btnSave);
 			
 		}catch(Exception e) {
-			
+			System.out.println("[Luma-Ecommerce] El metodo editMyAcount ha fallado en: "+e);
 		}
 	}
 	
