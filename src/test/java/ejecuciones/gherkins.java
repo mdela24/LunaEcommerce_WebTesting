@@ -30,4 +30,14 @@ public class gherkins extends objetos {
 	public void ingresamos_a_la_cuenta_creada() throws Throwable {
 		acount.MyAcount();
 	}
+	
+	@When("^Cambiar la contraseña \"(.*?)\", ingresar la nueva contraseña \"(.*?)\" y confirmarla \"(.*?)\"$")
+	public void cambiar_la_contraseña_ingresar_la_nueva_contraseña_y_confirmarla(String currentPass, String newPass, String confNewPass) throws Throwable {
+		acount.editMyAcount(currentPass, newPass, confNewPass);
+	}
+
+	@Given("^ingresamos el usuario \"(.*?)\" y el password \"(.*?)\"$")
+	public void ingresamos_el_usuario_y_el_password(String email, String password) throws Throwable {
+		login.login(email, password);
+	}
 }

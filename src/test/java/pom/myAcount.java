@@ -10,6 +10,13 @@ public class myAcount extends funcionesBasicas{
 
 	By btnList = By.xpath("//header/div/div/ul/li[2]/span/button");
 	By btnMyAcount = By.xpath("//header/div/div/ul/li[2]/div/ul/li");
+	By btnEdit = By.xpath("(//span[contains(.,'Edit')])[1]");
+	By checkChangePass = By.xpath("//input[contains(@name,'change_password')]");
+	By inputPassActual = By.xpath("//input[contains(@name,'current_password')]");
+	By inputNewPass =By.xpath("(//input[contains(@type,'password')])[2]");
+	By inputConfPass = By.xpath("(//input[contains(@type,'password')])[3]");
+	By btnSave = By.xpath("//span[contains(.,'Save')]");
+	
 	public myAcount(WebDriver driver) {
 		super(driver);
 	}
@@ -27,4 +34,20 @@ public class myAcount extends funcionesBasicas{
 			System.out.println("[Luma-Ecommerce] El metodo MyAcount ha fallado en: "+e);
 		}
 	}
+	
+	public void editMyAcount(String currentPass, String newPass, String confNewPass) {
+		try {
+			this.click(btnEdit);
+			this.click(checkChangePass);
+			this.send(inputPassActual, currentPass);
+			this.send(inputNewPass, newPass);
+			this.send(inputConfPass, confNewPass);
+			this.click(btnSave);
+			
+		}catch(Exception e) {
+			
+		}
+	}
+	
+	
 }
