@@ -27,10 +27,6 @@ public class loginPage extends funcionesBasicas {
 			this.click(btnSigIn);
 			this.send(inputUserName, email);
 			this.send(inputPassword, password+Keys.TAB+Keys.ENTER);
-//			String catchamesage = driver.findElement(catcha).getText();
-//			Thread.sleep(1000);
-//			this.send(inputCatcha, catchamesage+Keys.TAB+Keys.ENTER);
-			
 		}catch(Exception e) {
 			System.out.println("[Luma-Ecommerce] El metodo login ha fallado en: "+e);
 		}

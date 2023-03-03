@@ -23,7 +23,7 @@ Feature: Title of your feature
    | email                      | password      | newPass      | conPass      |
    | "emersono.olmos@gmail.com" | "Mdela24rap." | "Mdela24ra." | "Mdela24ra." |
 
-    @tag3
+  @tag3
   Scenario Outline: nos logueamoscon la nueva contraseña a la pagina
     Given ingresamos el usuario <email> y el password <newPass> 
    
@@ -31,3 +31,12 @@ Feature: Title of your feature
     Examples: 
    | email                      |  newPass      | 
    | "emersono.olmos@gmail.com" |  "Mdela24ra." | 
+   
+    @tag4
+  Scenario Outline: Agregamos productos de la primera pagina al carro de compras
+    Given escogemos los productos <productos> y los ingresamos al carro de compra
+   
+
+    Examples: 
+   | productos                  | 
+   | "women  pink t-shirt" | 

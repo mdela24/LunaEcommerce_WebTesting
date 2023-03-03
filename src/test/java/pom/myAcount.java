@@ -43,7 +43,6 @@ public class myAcount extends funcionesBasicas{
 			this.send(inputNewPass, newPass);
 			this.send(inputConfPass, confNewPass);
 			this.click(btnSave);
-			
 		}catch(Exception e) {
 			System.out.println("[Luma-Ecommerce] El metodo editMyAcount ha fallado en: "+e);
 		}

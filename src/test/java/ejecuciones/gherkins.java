@@ -40,4 +40,9 @@ public class gherkins extends objetos {
 	public void ingresamos_el_usuario_y_el_password(String email, String password) throws Throwable {
 		login.login(email, password);
 	}
+	
+	@Given("^escogemos los productos \"(.*?)\" y los ingresamos al carro de compra$")
+	public void escogemos_los_productos_y_los_ingresamos_al_carro_de_compra(String producto) throws Throwable {
+		ecommerceP.buscarProducto(producto);
+	}
 }

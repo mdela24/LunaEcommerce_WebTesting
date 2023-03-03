@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 		features= {"src/test/java/feature"},
 		glue= {"ejecuciones"},
 		plugin= {"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:output/report.html"},
-		tags= {"@tag3"})
+		tags= {"@tag4"})
 public class runner {
 
 }
