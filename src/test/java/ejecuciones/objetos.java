@@ -2,6 +2,7 @@ package ejecuciones;
 
 import org.openqa.selenium.WebDriver;
 
+import pom.cartPage;
 import pom.ecommercePage;
 import pom.loginPage;
 import pom.myAcount;
@@ -13,4 +14,5 @@ public class objetos {
 	protected loginPage login = new loginPage(driver);
 	protected myAcount acount = new myAcount(driver);
 	protected ecommercePage ecommerceP = new ecommercePage(driver);
+	protected cartPage cartP = new cartPage(driver);
 }

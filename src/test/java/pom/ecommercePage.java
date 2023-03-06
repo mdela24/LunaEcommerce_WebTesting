@@ -57,6 +57,7 @@ public class ecommercePage extends funcionesBasicas {
 					}
 				}
 			}
+			Thread.sleep(1000);
 		}catch(Exception e) {
 			System.out.println("[Luma-Ecommerce] El metodo buscarProducto ha fallado en: "+e);
 		}

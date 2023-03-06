@@ -45,4 +45,9 @@ public class gherkins extends objetos {
 	public void escogemos_los_productos_y_los_ingresamos_al_carro_de_compra(String producto) throws Throwable {
 		ecommerceP.buscarProducto(producto);
 	}
+	
+	@Given("^ingresamos datos para procesar el pago \"(.*?)\", \"(.*?)\"$")
+	public void ingresamos_datos_para_procesar_el_pago(String provincia, String postalCode) throws Throwable {
+		cartP.RevisarProduct(provincia, postalCode);
+	}
 }

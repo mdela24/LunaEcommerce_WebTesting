@@ -26,7 +26,6 @@ Feature: Title of your feature
   @tag3
   Scenario Outline: nos logueamoscon la nueva contraseña a la pagina
     Given ingresamos el usuario <email> y el password <newPass> 
-   
 
     Examples: 
    | email                      |  newPass      | 
@@ -35,8 +34,9 @@ Feature: Title of your feature
     @tag4
   Scenario Outline: Agregamos productos de la primera pagina al carro de compras
     Given escogemos los productos <productos> y los ingresamos al carro de compra
+    And ingresamos datos para procesar el pago <provincia>, <codigoPostal>
    
 
     Examples: 
-   | productos                  | 
-   | "women  pink t-shirt" | 
+   | productos             | provincia    | codigoPostal |
+   | "women  pink t-shirt" | "La Florida" | "8240000"    |
